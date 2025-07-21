@@ -1,0 +1,183 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+<p id="demo"></p>
+
+<script>
+var x, y, z;  // Declare 3 variables
+x = 5;    // Assign the value 5 to x
+y = 6;    // Assign the value 6 to y
+z = x + y;  // Assign the sum of x and y to z
+
+document.getElementById("demo").innerHTML =
+"The value of z is " + z + ".";
+</script>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p>JavaScript code blocks are written between { and }</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Hello Dolly!";
+  document.getElementById("demo2").innerHTML = "How are you?";
+  
+}
+</script> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+    <button type="button" onclick="areaOfCircle()">Click Me</button>
+
+    <p id="demo"></p>
+
+    <button type="button" onClick="areaOfSemiCircle()">Click Me</button>
+
+    <p id="demo2"></p>
+
+    <button type="button" onClick="areaOfCircle1(7)">Click Me</button>
+
+    <p id="demo3"></p>
+
+    <button type="button" onclick="areaOfTriangle(120, 14,)"> Click Me</button>
+
+    <p id="demo4"></p>
+
+    <button type="button" onclick="areaOfRectangle(600, 400,)">Click Me</button>
+
+    <p id="demo5"></p>
+
+    <button type="button" onclick="lengthOfSquare(144)">Click Me</button>
+    <p id="demo6"></p>
+
+
+<h1>JavaScript Functions</h1>
+
+<p>Call a function which performs a calculation and returns the result:</p>
+
+<p id="demo8"></p>
+
+<h1>JavaScript Division</h1>
+
+<p>Call a function which performs a calculation and returns the result:</p>
+<p id="division"></p>
+
+<h1>Quadratic Equation</h1>
+<p>Call a function which performs a calculation and returns the result:</p>
+<p id="equation"></p>
+
+
+
+<script>
+
+
+
+
+function areaOfCircle() {
+    var A, r;
+  r = 21; const pi = 3.142; 
+  A = pi * r * r;
+ 
+document.getElementById("demo").innerHTML =
+"The value of A is " + A + "square metre";
+}
+
+function areaOfSemiCircle() {
+  let r = 21;
+  const pi = 3.142;
+  let A = (pi * r * r)/2;
+
+  document.getElementById("demo2").innerHTML =
+  "The value of A is " + A + "square metre";
+}
+
+function areaOfCircle1(r) {
+  const pi = 3.142;
+  let A = pi * r * r;
+
+  document.getElementById("demo3").innerHTML =
+  "The value of A is " + A + "square metre";
+  
+}
+
+function areaOfTriangle(b, h,) {
+  A = (b * h)/2;
+
+  document.getElementById("demo4").innerHTML =
+  "The value of A is " + A + "square metre";
+  
+}
+
+function areaOfRectangle(l, b,) {
+ let A = l * b;
+
+ document.getElementById("demo5").innerHTML =
+ "The value of A is " + A + "square metre";
+ 
+}
+
+function lengthOfSquare(a) {
+  let L = a/4;
+  document.getElementById("demo6").innerHTML =
+  "The value of L is " + L +"cm";
+  
+}
+
+
+
+
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+
+let result = myFunction(4, 3);
+document.getElementById("demo8").innerHTML = result;
+
+function divisionOfNumbers(x1, x2)  {
+  return x1 / x2;
+}
+
+let answer = divisionOfNumbers(12, 6);
+document.getElementById("division").innerHTML = answer;
+
+function quadraticEqua(a, b, c) {
+ let G = (b*b) - 4*a*c;
+  let E = Math.sqrt(G);
+  let M1 = (-b + E)/2*a;
+  let M2 = (-b-E)/2*a;
+  let x1 = M1; 
+  let x2 = M2;
+  return [x1, x2];
+  
+}
+
+let finalAnswer = quadraticEqua(1, 5, 6)
+document.getElementById("equation").innerHTML = finalAnswer;
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
